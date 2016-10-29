@@ -92,6 +92,7 @@ body {
 	box-sizing: border-box;
 	align-items: center;
 	flex: 1;
+	font-size: larger;
 }
 
 .student.done {
