@@ -34,18 +34,16 @@ $( document ).ready( () => {
 	}
 	rows.push( row );
 
-	console.log( rows );
-
 	rows.forEach( row => {
-		studentHtml = row.map( student => `<div class="student">${ student }</div>`)
-		$( '.students' ).append(`<div class="student-row">${ studentHtml.join('\n') }</div>`)
+		let studentHtml = row.map( student => `<div class="student">${ student }</div>` );
+		$( '.students' ).append( `<div class="student-row">${ studentHtml.join('\n') }</div>` );
 	});
 
 	$( '.student' ).on( 'click', e => {
 		$( e.target ).toggleClass( 'done' );
 	});
 
-	$( '#reset' ).on( 'click', e => {
+	$( '#reset' ).on( 'click', () => {
 		$( '.student.done' ).removeClass( 'done' );
 	});
 
