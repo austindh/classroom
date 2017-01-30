@@ -1,5 +1,5 @@
 let students = [
-	'Michael',
+	'Lorenzo',
 	'Gage',
 	'Melissa',
 	'Jaylynn',
@@ -18,7 +18,8 @@ let students = [
 	'Anthony',
 	'David',
 	'Serenity',
-	'Valentin'
+	'Valentin',
+	'Kadyn'
 ];
 
 $( document ).ready( () => {
